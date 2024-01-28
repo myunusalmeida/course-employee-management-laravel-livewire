@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/boxicons-2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg py-3 border-bottom bg-white">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href=".">EmployeeApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-0 ms-md-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href=".">
+                            <i class="bx bx-home"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="karyawan.html">
+                            <i class="bx bx-user-pin"></i> Karyawan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="posisi-pekerjaan.html">
+                            <i class='bx bx-objects-horizontal-left'></i> Posisi Pekerjaan
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <p class="mb-0 text-dark">Hi, Yunus Almeida</p>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between mb-5">
+                <h4 class="fw-semibold mb-0">Tambah Data Karyawan</h4>
+                <a href="karyawan.html" class="btn btn-secondary btn-icon">
+                    <i class="bx bx-left-arrow-alt"></i> Batal & Kembali
+                </a>
+            </div>
+
+            <div class="card border-0">
+                <div class="card-body">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="name">Nama Lengkap</label>
+                                    <input type="text" name="name" id="name" class="form-control" autofocus required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nip">Nomor Induk Pegawai</label>
+                                    <input type="text" name="nip" id="nip" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="phone">Nomor Telepon</label>
+                                    <input type="text" name="phone" id="phone" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="birth_date">Tanggal Lahir</label>
+                                    <input type="date" name="birth_date" id="birth_date" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="birth_place">Tempat Lahir</label>
+                                    <input type="text" name="birth_place" id="birth_place" class="form-control"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="position">Posisi</label>
+                                    <select name="position" id="position" class="form-select">
+                                        <option value="">Pilih Posisi</option>
+                                        <option value="">HR</option>
+                                        <option value="">GA</option>
+                                        <option value="">Front-End Developer</option>
+                                        <option value="">Back-End Developer</option>
+                                        <option value="">Marketing</option>
+                                        <option value="">Social Media Specialist</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="join_date">Tanggal Bergabung</label>
+                                    <input type="date" name="join_date" id="join_date" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-icon">
+                            <i class="bx bx-save"></i> Simpan Baru
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
